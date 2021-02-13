@@ -1,0 +1,112 @@
+.variable-group::before,
+.variable-group::after {
+	content: '';
+	display: table;
+}
+.variable-group::after {
+	clear: both;
+}
+.variations {
+	display: block;
+	border: none;
+	margin-bottom: 0;
+}
+.entry-summary .variations tr {
+	display: block;
+	margin-bottom: 12px;
+}
+.variations .label {
+	vertical-align: middle;
+	font-size: 14px;
+	color: #333333;
+	font-family: 'sofia_promedium';
+	padding: 0 10px 0 0;
+	line-height: inherit;
+	text-align: left;
+	border: none;
+	border-radius: 0;
+}
+.variations td.label::after {
+	content: ':';
+}
+.variations label {
+	margin-bottom: 0;
+	font-weight: inherit;
+	font-family: inherit;
+}
+.variations .value {
+	padding: 0;
+	text-align: left;
+	border: none;
+	display: inline;
+}
+.variations select {
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+	width: 120px;
+}
+.variations .reset_variations {
+	margin-left: 10px;
+	vertical-align: middle;
+}
+.variations select[data-attributetype="box_style"] {
+	display: none !important;
+}
+.variations .data-val[data-attributetype="box_style"] {
+	display: inline-block;
+	vertical-align: middle;
+}
+.variations .data-val a.color {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	min-width: 16px;
+	height: 16px;
+	line-height: 14px;
+	border-radius: 50%;
+	font-size: 10px;
+	margin: 7px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.variations .data-val a.color[style="background: #ffffff;"],
+.variations .data-val a.color[style="background: #FFFFFF;"] {
+	background-color: #f8f8f8 !important;
+	border: 1px solid #e4e4e4;
+}
+.variations .data-val a.color:hover::before,
+.variations .data-val a.color.active::before {
+	content: '\f00c';
+	font-family: 'FontAwesome', sans-serif;
+	color: #fff;
+}
+.variations .data-val a.photo img {
+	max-height: 70px;
+	max-width: 180px;
+	opacity: 0.5;
+}
+.variations .data-val a.photo:last-child {
+	margin-right: 0;
+}
+.variations .data-val a.photo:hover img,
+.variations .data-val a.photo.active img {
+	opacity: 1;
+}
+.variations .data-val a:not(.color) {
+	display: inline-block;
+	margin-right: 15px;
+	border: 1px solid #a2a2a2;
+	border-radius: 3px;
+	padding: 0 5px;
+	font-weight: 500;
+}
+.variations .data-val a:not(.color):last-child {
+	margin-right: 0;
+}
+.variations .data-val a:not(.color):hover,
+.variations .data-val a:not(.color).active {
+	background-color: #85B839;
+	color: #fff;
+	border-color: transparent;
+}
